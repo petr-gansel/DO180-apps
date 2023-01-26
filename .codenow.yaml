@@ -1,0 +1,17 @@
+build:
+  pipelines:
+    triggers: []
+    preview:
+      pipeline: js-npm-app-preview
+    release:
+      pipeline: js-npm-app-release
+  image: node:12.22.12
+  environmentVariables: []
+advancedMode:
+  enabled: false
+runtime:
+  image: nginx
+  port: "3000"
+  endpoints:
+    external:
+      enabled: true
