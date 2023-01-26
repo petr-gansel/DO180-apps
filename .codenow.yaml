@@ -6,7 +6,9 @@ build:
     release:
       pipeline: js-npm-app-release
   image: node:12.22.12
-  environmentVariables: []
+  environmentVariables:
+    - key: PATH_CONTEXT
+      value: nodejs-app
 advancedMode:
   enabled: false
 runtime:
