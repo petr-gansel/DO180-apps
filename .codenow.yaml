@@ -9,6 +9,8 @@ build:
   environmentVariables:
     - key: PATH_CONTEXT
       value: nodejs-app
+    - key: test
+      value: value
 advancedMode:
   enabled: false
 runtime:
